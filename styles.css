@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-container {
+    width: 100%;
+text-align: center;
+
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+   
+}
+
+.carousel-button {
+    background: linear-gradient(45deg, #ff6b6b, #f94d6a);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.carousel-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-box {
+    padding: 20px;
+    background-color: #ffdddd;
+   text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #333;
+    min-height: 100px;
+   width: 80%;
+    margin: 0 auto;
+    display: none;  /*Start all content boxes hidden  */
+    animation: fadeIn 0.5s ease;
+}
+
+
+
+.content-box-info{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+max-width: auto;
+flex-direction: row;
+padding: 20px;
+
+}
+
+.bttn{
+text-align: center;
+text-decoration: none;
+font-size: 15px;
+font-weight: bolder;
+color:rgb(247, 241, 241);
+background-color: #f94d6a;
+border: none;
+padding: 15px 30px;
+margin: 0 10px;
+border-radius: 30px;
+cursor: pointer;
+}
+
+.bttn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-box-info img{
+justify-content: center;
+
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
